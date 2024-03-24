@@ -65,7 +65,7 @@ do
     Lkp=`grep "$qapp" /usr/share/applications/* | grep 'Exec=' | awk -F ':' '{print $1}' | head -1`
     Ico=`grep 'Icon=' $Lkp | awk -F '=' '{print $2}' | head -1`
     echo -en "${qapp}\x00icon\x1f${Ico}\n"
-done | rofi -no-fixed-num-lines -dmenu -theme-str "${r_override}" -theme-str "${pos}" -config $roconf)
-
+#done | rofi -no-fixed-num-lines -dmenu -theme-str "${r_override}" -theme-str "${pos}" -config $roconf)
+done | rofi -no-fixed-num-lines -dmenu -theme-str "${r_override}" -config $roconf)
 $RofiSel &
 

@@ -3,7 +3,7 @@
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: ${s_fontpx}px;
+    /* font-size: ${s_fontpx}px; */
     min-height: 10px;
 }
 
@@ -92,13 +92,18 @@ ${modules_ls}
 #custom-sl_end,
 #custom-sr_end,
 #custom-rl_end,
-#custom-rr_end {
+#custom-rr_end,
+#custom-al_end,
+#custom-ar_end {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
     margin: ${x1g_margin}px ${x2g_margin}px ${x3g_margin}px ${x4g_margin}px;
     padding-${x3}: ${g_paddin}px;
     padding-${x4}: ${g_paddin}px;
+
+    /* border-top: 2px solid @main-fg; */
+    border-bottom: 2px solid @wb-hvr-bg;
 }
 
 #workspaces,
@@ -140,4 +145,32 @@ ${modules_ls}
     border-radius: ${x1lc_radius}px ${x2lc_radius}px ${x3lc_radius}px ${x4lc_radius}px;
     margin-${x3}: ${e_margin}px;
     padding-${x3}: ${e_paddin}px;
+}
+
+#custom-ar_end {
+    border-radius: ${x1rr_radius}% ${x2rr_radius}% ${x3rr_radius}% ${x4rr_radius}%;
+    margin-${x4}: ${er_margin}px;
+    padding-${x4}: ${er_paddin}px;
+}
+
+#custom-al_end {
+    border-radius: ${x1lr_radius}% ${x2lr_radius}% ${x3lr_radius}% ${x4lr_radius}%;
+    margin-${x3}: ${er_margin}px;
+    padding-${x3}: ${er_paddin}px;
+}
+
+#custom-arch {
+    border-radius: 5px 20px 5px 20px;
+    margin-${x3}: ${e_margin}px;
+    padding-${x3}: 20px;
+    margin-${x4}: ${e_margin}px;
+    padding-${x4}: 20px;
+}
+
+#custom-monitor {
+    border-radius: ${x1lc_radius}px ${x2rc_radius}px ${x3rc_radius}px ${x4lc_radius}px;
+    margin-${x3}: ${e_margin}px;
+    padding-${x3}: 10px;
+    margin-${x4}: ${e_margin}px;
+    padding-${x4}: 10px;
 }

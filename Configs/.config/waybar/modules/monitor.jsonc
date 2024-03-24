@@ -1,0 +1,14 @@
+    "custom/monitor": {
+        "format": "󰹑 <sup>{}</sup>",
+        "rotate": ${r_deg},
+        "exec": " ${ScrDir}/monitorinfo.sh",
+        "return-type": "json",
+        // "exec": "echo ; echo Enable all screens // Disable current screen // nothing",
+        "on-click": "${ScrDir}/monitor.sh --enable-all", // --debug
+        "on-double-click": "${ScrDir}/monitor.sh --disable-except-current", // --debug
+        "on-click-middle": "tmux new -d ${ScrDir}/monitor.sh --disable-current", // --debug
+        "on-click-right": "nwg-displays -m ~/.config/hypr/configs/monitors.conf",
+        "tooltip": true,
+        "interval" : 86400 // once every day
+    },
+

@@ -1,0 +1,13 @@
+    "custom/arch": {
+        "format": "{} ",
+        "rotate": ${r_deg},
+        "exec": "${ScrDir}/tooltip.sh arch",
+        "return-type": "json",
+        "interval" : 86400, // once every day
+        "tooltip": true,
+        "on-click": "sleep 0.1 && ${ScrDir}/rofilaunch.sh d",
+        "on-click-forward": "sleep 0.1 && ${ScrDir}/rofiselect.sh",
+        "on-click-middle": "sleep 0.1 && ${ScrDir}/keybinds_hint.sh",
+        "on-click-right": "sleep 0.1 && ${ScrDir}/logoutlaunch.sh 2"
+    },
+

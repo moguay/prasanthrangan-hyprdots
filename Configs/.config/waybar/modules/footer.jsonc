@@ -37,11 +37,23 @@
         "tooltip": false
     },
 
+    "custom/al_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/ar_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
     "custom/padd": {
         "format": "  ",
         "interval" : "once",
         "tooltip": false
     }
 
-}
+},
 
